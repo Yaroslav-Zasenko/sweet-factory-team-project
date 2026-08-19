@@ -6,6 +6,7 @@ import SortCss from 'postcss-sort-media-queries';
 
 export default defineConfig(({ command }) => {
   return {
+    base: '/sweet-factory-team-project/', // <-- ДОДАНО: назва вашого репозиторію
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
